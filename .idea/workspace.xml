@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algos.java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/search/Binary.java" afterDir="false" />
+    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="project setup and binary search">
+      <change afterPath="$PROJECT_DIR$/src/sort/Bubble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sort/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sort/Quicksort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sort/Selection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +81,7 @@
       <workItem from="1655091133335" duration="2204000" />
       <workItem from="1655097150029" duration="4659000" />
       <workItem from="1655693259474" duration="112000" />
-      <workItem from="1655693435991" duration="1144000" />
+      <workItem from="1655693435991" duration="6685000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1655077427944</created>
@@ -84,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655077427944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="project setup and binary search">
+      <created>1655695886863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655695886863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="project setup and binary search" />
+    <option name="LAST_COMMIT_MESSAGE" value="project setup and binary search" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
