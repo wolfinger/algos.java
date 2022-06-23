@@ -6,6 +6,7 @@ import io.wolfinger.algos.sort.Bubble;
 import io.wolfinger.algos.sort.Selection;
 import io.wolfinger.algos.sort.Insertion;
 import io.wolfinger.algos.sort.Quicksort;
+import io.wolfinger.algos.sort.Quickselect;
 
 class Algos {
     public static void main(String[] args) {
@@ -23,6 +24,11 @@ class Algos {
         // arr = Insertion.sort(arr);
         // System.out.println(Arrays.toString(arr));
 
+        // test quickselect
+        System.out.println(Quickselect.select(arr, 2));
+        System.out.println(Quickselect.select(arr, 0));
+        System.out.println(Quickselect.select(arr, 4));
+
         // test quicksort
         arr = Quicksort.sort(arr);
         System.out.println(Arrays.toString(arr));
@@ -30,6 +36,15 @@ class Algos {
         // test binary search
         int[] searchRet;
         searchRet = Binary.search(arr, 6);
+        System.out.println(searchRet[0] + ", " + searchRet[1]);
+
+        searchRet = Binary.search(arr, 52);
+        System.out.println(searchRet[0] + ", " + searchRet[1]);
+
+        searchRet = Binary.search(arr, 1);
+        System.out.println(searchRet[0] + ", " + searchRet[1]);
+
+        searchRet = Binary.search(arr, 2);
         System.out.println(searchRet[0] + ", " + searchRet[1]);
     }
 

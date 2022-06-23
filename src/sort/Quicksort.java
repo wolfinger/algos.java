@@ -18,7 +18,7 @@ public class Quicksort {
         quicksortHelper(arr, pivot+1, right);
     }
 
-    private static int partition(int[] arr, int left, int right) {
+    protected static int partition(int[] arr, int left, int right) {
         int start = left;
         int pivot = right;
         right -= 1;
