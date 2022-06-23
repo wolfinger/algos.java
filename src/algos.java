@@ -7,6 +7,7 @@ import io.wolfinger.algos.sort.Selection;
 import io.wolfinger.algos.sort.Insertion;
 import io.wolfinger.algos.sort.Quicksort;
 import io.wolfinger.algos.sort.Quickselect;
+import io.wolfinger.algos.ds.Stack;
 
 class Algos {
     public static void main(String[] args) {
@@ -46,6 +47,19 @@ class Algos {
 
         searchRet = Binary.search(arr, 2);
         System.out.println(searchRet[0] + ", " + searchRet[1]);
-    }
 
+        // test a stack
+        System.out.println("testing stack:");
+        Stack s = new Stack();
+
+        System.out.println(s.read());
+
+        for (int i=0; i < arr.length; i++) {
+            s.push(arr[i]);
+        }
+
+        System.out.println(s.read());
+        System.out.println(s.pop());
+        System.out.println(s.read());
+    }
 }

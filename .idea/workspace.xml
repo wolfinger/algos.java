@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="add bubble, insertion, selection, and quicksort">
-      <change afterPath="$PROJECT_DIR$/src/sort/Quickselect.java" afterDir="false" />
+    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="extend Quicksort w/ Quickselect">
+      <change afterPath="$PROJECT_DIR$/src/ds/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/Quicksort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <workItem from="1655091133335" duration="2204000" />
       <workItem from="1655097150029" duration="4659000" />
       <workItem from="1655693259474" duration="112000" />
-      <workItem from="1655693435991" duration="10340000" />
+      <workItem from="1655693435991" duration="12765000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1655077427944</created>
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655780902529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="extend Quicksort w/ Quickselect">
+      <created>1655950882785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655950882785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +151,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="project setup and binary search" />
     <MESSAGE value="add bubble, insertion, selection, and quicksort" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bubble, insertion, selection, and quicksort" />
+    <MESSAGE value="extend Quicksort w/ Quickselect" />
+    <option name="LAST_COMMIT_MESSAGE" value="extend Quicksort w/ Quickselect" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
