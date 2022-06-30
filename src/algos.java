@@ -9,6 +9,8 @@ import io.wolfinger.algos.sort.Quicksort;
 import io.wolfinger.algos.sort.Quickselect;
 import io.wolfinger.algos.ds.Stack;
 import io.wolfinger.algos.ds.Queue;
+import io.wolfinger.algos.ds.Node;
+import io.wolfinger.algos.ds.LinkedList;
 
 class Algos {
     public static void main(String[] args) {
@@ -77,5 +79,28 @@ class Algos {
         System.out.println(q.dequeue());
         System.out.println(q.read());
 
+        // test a linked list
+        System.out.println("testing linked list:");
+
+        Node n1 = new Node(arr[0]);
+        Node n2 = new Node(arr[1]);
+        Node n3 = new Node(arr[3]);
+
+        LinkedList ll = new LinkedList(n1);
+        System.out.println(ll.head.data);
+        ll.addToEnd(n2);
+        ll.addToEnd(n3);
+
+        // print nodes
+        for(Node node = ll.head; node != null; node = node.next) {
+            System.out.println(node.data);
+        }
+
+        ll.deleteFromEnd();
+
+        // print nodes using read method
+        System.out.println(ll.read(0));
+        System.out.println(ll.read(1));
+        System.out.println(ll.read(2));
     }
 }
