@@ -8,6 +8,7 @@ import io.wolfinger.algos.sort.Insertion;
 import io.wolfinger.algos.sort.Quicksort;
 import io.wolfinger.algos.sort.Quickselect;
 import io.wolfinger.algos.ds.Stack;
+import io.wolfinger.algos.ds.Queue;
 
 class Algos {
     public static void main(String[] args) {
@@ -61,5 +62,20 @@ class Algos {
         System.out.println(s.read());
         System.out.println(s.pop());
         System.out.println(s.read());
+
+        // test a queue
+        System.out.println("testing queue:");
+        Queue q = new Queue();
+
+        System.out.println(q.read());
+
+        for (int i=0; i < arr.length; i++) {
+            q.enqueue(arr[i]);
+        }
+
+        System.out.println(q.read());
+        System.out.println(q.dequeue());
+        System.out.println(q.read());
+
     }
 }
