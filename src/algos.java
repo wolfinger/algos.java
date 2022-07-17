@@ -11,6 +11,8 @@ import io.wolfinger.algos.ds.Stack;
 import io.wolfinger.algos.ds.Queue;
 import io.wolfinger.algos.ds.Node;
 import io.wolfinger.algos.ds.LinkedList;
+import io.wolfinger.algos.ds.BSTNode;
+import io.wolfinger.algos.ds.BST;
 
 class Algos {
     public static void main(String[] args) {
@@ -102,5 +104,33 @@ class Algos {
         System.out.println(ll.read(0));
         System.out.println(ll.read(1));
         System.out.println(ll.read(2));
+
+        // test a binary search tree
+        //                   12
+        //               7       24
+        //             3   8   18   52
+        //           1  6            103
+
+        BSTNode root = new BSTNode(12);
+        BST.insert(root, 7);
+        BST.insert(root, 24);
+        BST.insert(root, 3);
+        BST.insert(root, 8);
+        BST.insert(root, 18);
+        BST.insert(root, 52);
+        BST.insert(root, 1);
+        BST.insert(root, 6);
+        BST.insert(root, 103);
+        BST.insert(root, 20);
+
+        System.out.println(BST.search(root, 18));
+        System.out.println(BST.search(root, 3));
+        System.out.println(BST.search(root, 21));
+
+        BST.delete(root, 12);
+
+        System.out.println(root.data);
+        System.out.println(root.left.data);
+        System.out.println(root.right.left.data);
     }
 }
