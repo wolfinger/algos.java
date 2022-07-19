@@ -13,6 +13,7 @@ import io.wolfinger.algos.ds.Node;
 import io.wolfinger.algos.ds.LinkedList;
 import io.wolfinger.algos.ds.BSTNode;
 import io.wolfinger.algos.ds.BST;
+import io.wolfinger.algos.ds.Heap;
 
 class Algos {
     public static void main(String[] args) {
@@ -109,7 +110,7 @@ class Algos {
         //                   12
         //               7       24
         //             3   8   18   52
-        //           1  6            103
+        //           1  6        20   103
 
         BSTNode root = new BSTNode(12);
         BST.insert(root, 7);
@@ -132,5 +133,22 @@ class Algos {
         System.out.println(root.data);
         System.out.println(root.left.data);
         System.out.println(root.right.left.data);
+
+        System.out.println("heap time ---");
+        Heap heap = new Heap(arr[0]);
+        for (int i=1; i < arr.length; i++) {
+            heap.insert(arr[i]);
+        }
+
+        heap.print();
+        System.out.println("===");
+
+        heap.delete();
+        heap.delete();
+        heap.delete();
+
+        heap.print();
+
+        System.out.println("===");
     }
 }
