@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="binary search tree">
-      <change afterPath="$PROJECT_DIR$/src/ds/Heap.java" afterDir="false" />
+    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="heap">
+      <change afterPath="$PROJECT_DIR$/src/ds/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ds/TrieNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +83,7 @@
       <workItem from="1655957683866" duration="1200000" />
       <workItem from="1656555019414" duration="4133000" />
       <workItem from="1658070546822" duration="1092000" />
-      <workItem from="1658075291835" duration="4371000" />
+      <workItem from="1658075291835" duration="7538000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1655077427944</created>
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658076098255</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="heap">
+      <created>1658201522545</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658201522545</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +196,8 @@
     <MESSAGE value="queue" />
     <MESSAGE value="linkedlist" />
     <MESSAGE value="binary search tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="binary search tree" />
+    <MESSAGE value="heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="heap" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

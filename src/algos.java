@@ -14,6 +14,7 @@ import io.wolfinger.algos.ds.LinkedList;
 import io.wolfinger.algos.ds.BSTNode;
 import io.wolfinger.algos.ds.BST;
 import io.wolfinger.algos.ds.Heap;
+import io.wolfinger.algos.ds.Trie;
 
 class Algos {
     public static void main(String[] args) {
@@ -148,6 +149,22 @@ class Algos {
         heap.delete();
 
         heap.print();
+
+        System.out.println("===");
+
+        Trie t = new Trie();
+        t.insert("cat");
+        t.insert("cab");
+        t.insert("call");
+        t.insert("caller");
+
+        System.out.println(t.root.kids.get('c').kids.get('a').kids);
+
+        t.collectAllWords(null, "");
+
+        for (String word : t.words) {
+            System.out.println(word);
+        }
 
         System.out.println("===");
     }
