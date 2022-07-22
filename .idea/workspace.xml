@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="heap">
-      <change afterPath="$PROJECT_DIR$/src/ds/Trie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ds/TrieNode.java" afterDir="false" />
+    <list default="true" id="f446a7f8-7975-4840-a065-dd053d1313e1" name="Changes" comment="trie">
+      <change afterPath="$PROJECT_DIR$/src/ds/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ds/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ds/VertexQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algos.java" afterDir="false" />
     </list>
@@ -83,7 +84,7 @@
       <workItem from="1655957683866" duration="1200000" />
       <workItem from="1656555019414" duration="4133000" />
       <workItem from="1658070546822" duration="1092000" />
-      <workItem from="1658075291835" duration="7538000" />
+      <workItem from="1658075291835" duration="11122000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1655077427944</created>
@@ -148,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658201522545</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="trie">
+      <created>1658373233434</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658373233434</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +205,8 @@
     <MESSAGE value="linkedlist" />
     <MESSAGE value="binary search tree" />
     <MESSAGE value="heap" />
-    <option name="LAST_COMMIT_MESSAGE" value="heap" />
+    <MESSAGE value="trie" />
+    <option name="LAST_COMMIT_MESSAGE" value="trie" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

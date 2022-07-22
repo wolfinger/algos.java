@@ -1,6 +1,8 @@
 package io.wolfinger.algos;
 
 import java.util.Arrays;
+import java.util.HashMap;
+
 import io.wolfinger.algos.search.Binary;
 import io.wolfinger.algos.sort.Bubble;
 import io.wolfinger.algos.sort.Selection;
@@ -15,6 +17,8 @@ import io.wolfinger.algos.ds.BSTNode;
 import io.wolfinger.algos.ds.BST;
 import io.wolfinger.algos.ds.Heap;
 import io.wolfinger.algos.ds.Trie;
+import io.wolfinger.algos.ds.Graph;
+import io.wolfinger.algos.ds.Vertex;
 
 class Algos {
     public static void main(String[] args) {
@@ -167,5 +171,71 @@ class Algos {
         }
 
         System.out.println("===");
+
+        // create graph, vertices, and edges
+        Graph g = new Graph();
+
+        Vertex vAlice = new Vertex("alice");
+
+        Vertex vBob = new Vertex("bob");
+        Vertex vCandy = new Vertex("candy");
+        Vertex vDerek = new Vertex("derek");
+        Vertex vElaine = new Vertex("elaine");
+
+        Vertex vFred = new Vertex("fred");
+        Vertex vGina = new Vertex("gina");
+
+        Vertex vHelen = new Vertex("helen");
+        Vertex vIrena = new Vertex("irena");
+
+        g.addVertex(vAlice);
+
+        g.addVertex(vBob);
+        g.addVertex(vCandy);
+        g.addVertex(vDerek);
+        g.addVertex(vElaine);
+
+        g.addVertex(vFred);
+        g.addVertex(vGina);
+
+        g.addVertex(vHelen);
+        g.addVertex(vIrena);
+
+        vAlice.addAdjacentVertex(vBob);
+        vAlice.addAdjacentVertex(vCandy);
+        vAlice.addAdjacentVertex(vDerek);
+        vAlice.addAdjacentVertex(vElaine);
+
+        vBob.addAdjacentVertex(vCandy);
+        vBob.addAdjacentVertex(vFred);
+
+        vCandy.addAdjacentVertex(vAlice);
+        vCandy.addAdjacentVertex(vHelen);
+
+        vDerek.addAdjacentVertex(vAlice);
+        vDerek.addAdjacentVertex(vElaine);
+        vDerek.addAdjacentVertex(vGina);
+
+        vElaine.addAdjacentVertex(vAlice);
+        vElaine.addAdjacentVertex(vDerek);
+
+        vFred.addAdjacentVertex(vBob);
+        vFred.addAdjacentVertex(vHelen);
+
+        vGina.addAdjacentVertex(vDerek);
+        vGina.addAdjacentVertex(vIrena);
+
+        vHelen.addAdjacentVertex(vFred);
+        vHelen.addAdjacentVertex(vCandy);
+
+        vIrena.addAdjacentVertex(vGina);
+
+        HashMap<String, Boolean> visited = new HashMap<>();
+
+        System.out.println("=== dfs ===");
+        Graph.dfsTraverse(vAlice, visited);
+
+        System.out.println("=== bfs ===");
+        Graph.bfsTraverse(vAlice);
     }
 }
